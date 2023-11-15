@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Assertions;
 
 import java.util.List;
 
-import static org.junit.Assert.assertTrue;
+// import static org.junit.Assert.assertTrue;
 
 public class ejercicio4 {
     String isbnToLocate = "";
@@ -28,7 +28,7 @@ public class ejercicio4 {
         List<Book> foundBooks = books.find("un-isbn-2");
         Assertions.assertTrue(foundBooks::isEmpty);
         // versión de ana:
-        assertTrue(foundBooks.isEmpty());
+        // assertTrue(foundBooks.isEmpty());
 
     }
 
@@ -77,8 +77,6 @@ public class ejercicio4 {
                 books.findOrFail(isbnToLocate));
 
     }
-
-
 
 
 }
