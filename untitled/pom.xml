@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Ej1_JSON</artifactId>
+    <artifactId>EJ2_JSON</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -13,6 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
@@ -44,5 +45,7 @@
             <artifactId>org.eclipse.sisu.inject</artifactId>
             <version>0.3.5</version>
         </dependency>
+
     </dependencies>
+
 </project>
