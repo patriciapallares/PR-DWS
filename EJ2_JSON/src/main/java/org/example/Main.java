@@ -26,7 +26,7 @@ public class Main {
 
         // 4. Luego, deserializa el archivo JSON de nuevo en una lista de libros.
         List<Libro> libros2 = leerArrayObjetosJson(rutaLibros);
-        System.out.println("\n**** AHORA LEO DEPORTISTAS 2 ****");
+        System.out.println("\n**** AHORA LEO LIBROS 2 ****");
         libros2.forEach(System.out::println);
 
        // Libro probando = encontrarLibroPorTitulo("Fatine",libros);
