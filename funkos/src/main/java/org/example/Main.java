@@ -4,12 +4,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.SQLOutput;
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class Main {
@@ -19,6 +17,19 @@ public class Main {
     public static void main(String[] args) {
         // Lectura de ficheros CSV con Files.lines en java.nio
         try (Stream<String> contenidoFichero = Files.lines(Path.of(".", "src", "main", "resources", "funkos.csv"))) {
+
+            // Para conseguir dos decimales y € al final
+
+            // Definir la localidad para español
+            Locale locale = new Locale("es", "ES");
+
+            // Obtener un formateador de moneda para la localidad española
+            NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
+
+            // Establecer el número de decimales a dos
+            formatoMoneda.setMaximumFractionDigits(2);
+
+
             List<List<String>> funkosString = contenidoFichero.map(l -> Arrays.asList(l.split(COMMA_DELIMITER))).toList();
 
             // funkosString.forEach(System.out::println);
@@ -55,13 +66,16 @@ public class Main {
                     .map(Funko::getNombre)
                     .forEach(System.out::println);
 
-            System.out.println("LA MEDIA ES:");
+            System.out.println("PRECIO MEDIO: ");
             // media de precios de funkos
             double mediaPrecioFunkos = funkosFunkos.stream()
                     .mapToDouble(Funko::getPrecio)
                     .average().getAsDouble();
-            System.out.println(mediaPrecioFunkos);
+
+            String montoFormateado = formatoMoneda.format(mediaPrecioFunkos);
+            System.out.println(montoFormateado);
 /*
+
 
             // TODO -  CONVERTIR EN FUNCIÓN CON PARÁMETROS
             // funkos agrupados por modelos
