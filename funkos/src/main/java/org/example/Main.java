@@ -154,7 +154,9 @@ public class Main {
                     .map(Funko::getNombre)
                     .forEach(System.out::println);
 
-
+            // TODO MÉTODO BACKUP
+            // TODO MÉTODO RESTORE
+            // TODO TESTEAR LOS CASOS DE LOS MÉTODOS CREADOS USANDO JUNIT Y MOCKITO
 
         } catch (IOException e) {
             e.printStackTrace(System.out);
