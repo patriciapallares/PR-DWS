@@ -18,4 +18,13 @@ public class Funko {
     private double precio; // dos decimales
     private LocalDate fecha_lanzamiento;
 
+    @Override
+    public String toString() {
+        return cod  + "," + nombre +
+                "," + modelo +
+                "," + precio +
+                "," + fecha_lanzamiento + "\n";
+    }
 }
+
+
