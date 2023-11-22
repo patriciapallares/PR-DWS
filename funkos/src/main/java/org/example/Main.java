@@ -2,10 +2,8 @@ package org.example;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.Path;
+
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-import java.sql.SQLOutput;
 import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -14,20 +12,51 @@ import java.util.stream.Stream;
 
 public class Main {
     private final static String COMMA_DELIMITER = ",";
-
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // Lectura de ficheros CSV con Files.lines en java.nio
-        try (Stream<String> contenidoFichero = Files.lines(Path.of(".", "src", "main", "resources", "funkos.csv"))) {
 
+        try{
+            // ruta del mac
+            String miRutaFunkos = "/Users/patriciapallares/IdeaProjects/PR-DWS/funkos/src/main/resources/funkos.csv";
 
+            List<Funko> funkosFunkos = deserializacionDesdeCsv(miRutaFunkos);
+
+            masCaro(funkosFunkos);
+
+            precioMedio(funkosFunkos);
+
+            agrupadoPorModelo(funkosFunkos, "MARVEL");
+            agrupadoPorModelo(funkosFunkos, "DISNEY");
+            agrupadoPorModelo(funkosFunkos, "ANIME");
+            agrupadoPorModelo(funkosFunkos, "OTROS");
+
+            cantidadPorModelo(funkosFunkos, "MARVEL");
+            cantidadPorModelo(funkosFunkos, "DISNEY");
+            cantidadPorModelo(funkosFunkos, "ANIME");
+            cantidadPorModelo(funkosFunkos, "OTROS");
+
+            funkosPorAnyo(funkosFunkos, 2023);
+
+            // ruta de clase
+            String miRutaBackup = "/home/daw2/Escriptori/PR-DWS/funkos/src/main/resources/backup.dat";
+
+            // MÉTODO BACKUP
+            // backup(funkosFunkos,miRutaBackup);
+
+            // MÉTODO RESTORE
+            // List<Funko> funkosRestored = restore(miRutaBackup);
+
+            // TODO TESTEAR LOS CASOS DE LOS MÉTODOS CREADOS USANDO JUNIT Y MOCKITO
+        }catch (IOException e) {
+            e.printStackTrace(System.out);
+        }
+
+    }
+
+    public static List deserializacionDesdeCsv(String ruta) throws IOException {
+        List<Funko> lista = new ArrayList<>();
+        try (Stream<String> contenidoFichero = Files.lines(Paths.get(ruta))) {
             List<List<String>> funkosString = contenidoFichero.map(l -> Arrays.asList(l.split(COMMA_DELIMITER))).toList();
-
-            // funkosString.forEach(System.out::println);
-
-            List<Funko> funkosFunkos = new ArrayList<>();
-
-            // funkosString.remove(0);
 
             for (int i = 1; i < funkosString.size(); i++) {
                 List<String> unFunko = funkosString.get(i);
@@ -40,76 +69,21 @@ public class Main {
                 ejemplo.setPrecio(Double.parseDouble(unFunko.get(3)));
                 ejemplo.setFecha_lanzamiento(LocalDate.parse(unFunko.get(4), formatter));
 
-                funkosFunkos.add(ejemplo);
+                lista.add(ejemplo);
             }
-
-            // funkosFunkos.forEach(System.out::println);
-
-            // Funko más caro:
-            masCaro(funkosFunkos);
-
-            // Precio medio:
-            precioMedio(funkosFunkos);
-
-            agrupadoPorModelo(funkosFunkos, "MARVEL");
-            agrupadoPorModelo(funkosFunkos, "DISNEY");
-            agrupadoPorModelo(funkosFunkos, "ANIME");
-            agrupadoPorModelo(funkosFunkos, "OTROS");
-
-
-            cantidadPorModelo(funkosFunkos, "MARVEL");
-            cantidadPorModelo(funkosFunkos, "DISNEY");
-            cantidadPorModelo(funkosFunkos, "ANIME");
-            cantidadPorModelo(funkosFunkos, "OTROS");
-
-            /*
-            // date.getYear() >= yearStart && date.getYear() <= yearEnd
-
-            LocalDate dateStart =  LocalDate.of(23, 1, 1);
-            LocalDate dateEnd =  LocalDate.of(23, 12, 31);
-
-            funkosFunkos.stream().filter(funko -> funko.getFecha_lanzamiento() >= dateStart && funko.getFecha_lanzamiento()<= dateStart);
-
-            */
-
-            // funkos del 2023
-
-            /*
-            System.out.println("fUNKO DEL 2023");
-            funkosFunkos.stream()
-                    .filter(funko -> funko.getFecha_lanzamiento().getYear() == 2023)
-                    .map(Funko::getNombre)
-                    .forEach(System.out::println);
-
-            */
-
-
-            Path rutaTxt = Path.of(".", "src", "main", "resources", "backup.txt");
-
-            String miRutaBackup = "/home/daw2/Escriptori/PR-DWS/funkos/src/main/resources/backup.dat";
-
-            // MÉTODO BACKUP
-            // backup(funkosFunkos,miRutaBackup);
-
-
-            // MÉTODO RESTORE
-            // List<Funko> funkosRestored = restore(miRutaBackup);
-
-            // TODO TESTEAR LOS CASOS DE LOS MÉTODOS CREADOS USANDO JUNIT Y MOCKITO
-
         } catch (IOException e) {
             e.printStackTrace(System.out);
         }
+        return lista;
     }
 
-
-    // hago el backup como si fuera csv para que el restore sea más sencillo
 
     public static void backup(List<Funko> lista, String ruta) throws IOException {
         // Borra el contenido del archivo
         Files.write(Paths.get(ruta), new byte[0]); // Escribe un array de bytes vacío para limpiar el archivo
 
         // escribir en txt
+        // hago el backup como si fuera csv para que el restore sea más sencillo
         /*
         for (int i = 0; i < lista.size(); i++) {
             try {
@@ -170,6 +144,7 @@ public class Main {
         return funkosDatFunkos;
     }
 
+
     public static void masCaro(List<Funko> lista) {
         // SE PODRÍA HACER MEJOR
         double precioMax = lista.stream()
@@ -185,7 +160,7 @@ public class Main {
 
     }
 
-    public static void precioMedio(List<Funko> lista){
+    public static void precioMedio(List<Funko> lista) {
         // Para conseguir dos decimales y € al final
         Locale locale = new Locale("es", "ES"); // Definir la localidad para español
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale); // Obtener un formateador de moneda para la localidad española
@@ -196,24 +171,34 @@ public class Main {
                 .average().getAsDouble();
 
         String montoFormateado = formatoMoneda.format(mediaPrecioFunkos);
-        System.out.println( "PRECIO MEDIO: " + montoFormateado);
+        System.out.println("PRECIO MEDIO: " + montoFormateado);
     }
 
-    public static void agrupadoPorModelo(List<Funko> lista, String modelo){
-        System.out.println("FUNKOS "+modelo+":");
+    public static void agrupadoPorModelo(List<Funko> lista, String modelo) {
+        System.out.println("FUNKOS " + modelo + ":");
         lista.stream()
                 .filter(funko -> Objects.equals(funko.getModelo(), modelo))
                 .map(Funko::getNombre)
                 .forEach(System.out::println);
     }
 
-    public static void cantidadPorModelo(List<Funko> lista, String modelo){
-        System.out.println("NÚMERO DE FUNKOS "+modelo+":");
+    public static void cantidadPorModelo(List<Funko> lista, String modelo) {
+        System.out.println("NÚMERO DE FUNKOS " + modelo + ":");
         long cantidadMarvel = lista.stream()
                 .filter(funko -> Objects.equals(funko.getModelo(), modelo))
                 .count();
 
         System.out.println(cantidadMarvel);
+    }
+
+    public static void funkosPorAnyo(List<Funko> lista, int anyo) {
+        System.out.println("FUNKOS DE " + anyo);
+        lista.stream()
+                .filter(funko -> funko.getFecha_lanzamiento().getYear() == anyo)
+                .map(Funko::getNombre)
+                .forEach(System.out::println);
+
+
     }
 
 }
