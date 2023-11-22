@@ -1,6 +1,6 @@
 package org.example;
 
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -20,23 +20,12 @@ public class Main {
         // Lectura de ficheros CSV con Files.lines en java.nio
         try (Stream<String> contenidoFichero = Files.lines(Path.of(".", "src", "main", "resources", "funkos.csv"))) {
 
-            // Para conseguir dos decimales y € al final
-
-            // Definir la localidad para español
-            Locale locale = new Locale("es", "ES");
-
-            // Obtener un formateador de moneda para la localidad española
-            NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-
-            // Establecer el número de decimales a dos
-            formatoMoneda.setMaximumFractionDigits(2);
-
 
             List<List<String>> funkosString = contenidoFichero.map(l -> Arrays.asList(l.split(COMMA_DELIMITER))).toList();
 
             // funkosString.forEach(System.out::println);
 
-             List<Funko> funkosFunkos = new ArrayList<>();
+            List<Funko> funkosFunkos = new ArrayList<>();
 
             // funkosString.remove(0);
 
@@ -54,90 +43,24 @@ public class Main {
                 funkosFunkos.add(ejemplo);
             }
 
-           // funkosFunkos.forEach(System.out::println);
+            // funkosFunkos.forEach(System.out::println);
 
-            // Funko más caro: PRECIO
-            double precioMax = funkosFunkos.stream()
-                    .map(Funko::getPrecio)
-                    .max(Double::compareTo)
-                    .orElse(null);
-            // Funko más caro: NOMBRE
-            System.out.println("FUNKO MÁS CARO:");
-           funkosFunkos.stream()
-                    .filter(funko -> funko.getPrecio() == precioMax)
-                    .map(Funko::getNombre)
-                    .forEach(System.out::println);
+            // Funko más caro:
+            masCaro(funkosFunkos);
 
-            System.out.println("PRECIO MEDIO: ");
-            // media de precios de funkos
-            double mediaPrecioFunkos = funkosFunkos.stream()
-                    .mapToDouble(Funko::getPrecio)
-                    .average().getAsDouble();
+            // Precio medio:
+            precioMedio(funkosFunkos);
 
-            String montoFormateado = formatoMoneda.format(mediaPrecioFunkos);
-            System.out.println(montoFormateado);
-/*
+            agrupadoPorModelo(funkosFunkos, "MARVEL");
+            agrupadoPorModelo(funkosFunkos, "DISNEY");
+            agrupadoPorModelo(funkosFunkos, "ANIME");
+            agrupadoPorModelo(funkosFunkos, "OTROS");
 
 
-            // TODO -  CONVERTIR EN FUNCIÓN CON PARÁMETROS
-            // funkos agrupados por modelos
-            System.out.println("FUNKOS MARVEL:");
-            funkosFunkos.stream()
-                    .filter(funko -> Objects.equals(funko.getModelo(), "MARVEL"))
-                    .map(Funko::getNombre)
-                    .forEach(System.out::println);
-
-            System.out.println("FUNKOS DISNEY:");
-            funkosFunkos.stream()
-                    .filter(funko -> Objects.equals(funko.getModelo(), "DISNEY"))
-                    .map(Funko::getNombre)
-                    .forEach(System.out::println);
-
-            System.out.println("FUNKOS ANIME:");
-            funkosFunkos.stream()
-                    .filter(funko -> Objects.equals(funko.getModelo(), "ANIME"))
-                    .map(Funko::getNombre)
-                    .forEach(System.out::println);
-
-            System.out.println("FUNKOS OTROS:");
-            funkosFunkos.stream()
-                    .filter(funko -> Objects.equals(funko.getModelo(), "OTROS"))
-                    .map(Funko::getNombre)
-                    .forEach(System.out::println);
-
-            */
-
-            // TODO -  CONVERTIR EN FUNCIÓN CON PARÁMETROS
-
-            System.out.println("NÚMERO DE FUNKOS MARVEL:");
-            long cantidadMarvel = funkosFunkos.stream()
-                    .filter(funko -> Objects.equals(funko.getModelo(), "MARVEL"))
-                    .count();
-
-            System.out.println(cantidadMarvel);
-
-            System.out.println("NÚMERO DE FUNKOS DISNEY:");
-            long cantidaDisney = funkosFunkos.stream()
-                    .filter(funko -> Objects.equals(funko.getModelo(), "DISNEY"))
-                    .count();
-
-            System.out.println(cantidaDisney);
-
-
-            System.out.println("NÚMERO DE FUNKOS ANIME:");
-            long cantidadAnime = funkosFunkos.stream()
-                    .filter(funko -> Objects.equals(funko.getModelo(), "ANIME"))
-                    .count();
-
-            System.out.println(cantidadAnime);
-
-
-            System.out.println("NÚMERO DE FUNKOS OTROS:");
-            long cantidadOtros = funkosFunkos.stream()
-                    .filter(funko -> Objects.equals(funko.getModelo(), "OTROS"))
-                    .count();
-
-            System.out.println(cantidadOtros);
+            cantidadPorModelo(funkosFunkos, "MARVEL");
+            cantidadPorModelo(funkosFunkos, "DISNEY");
+            cantidadPorModelo(funkosFunkos, "ANIME");
+            cantidadPorModelo(funkosFunkos, "OTROS");
 
             /*
             // date.getYear() >= yearStart && date.getYear() <= yearEnd
@@ -162,14 +85,15 @@ public class Main {
 
 
             Path rutaTxt = Path.of(".", "src", "main", "resources", "backup.txt");
-            String miRutaBackup = "/Users/patriciapallares/IdeaProjects/PR-DWS/funkos/src/main/resources/backup.txt";
+
+            String miRutaBackup = "/home/daw2/Escriptori/PR-DWS/funkos/src/main/resources/backup.dat";
 
             // MÉTODO BACKUP
-            backup(funkosFunkos,miRutaBackup);
+            // backup(funkosFunkos,miRutaBackup);
 
 
             // MÉTODO RESTORE
-            List<Funko> funkosRestored = restore(miRutaBackup);
+            // List<Funko> funkosRestored = restore(miRutaBackup);
 
             // TODO TESTEAR LOS CASOS DE LOS MÉTODOS CREADOS USANDO JUNIT Y MOCKITO
 
@@ -181,12 +105,12 @@ public class Main {
 
     // hago el backup como si fuera csv para que el restore sea más sencillo
 
-    public static void backup(List lista, String ruta) throws IOException {
-
+    public static void backup(List<Funko> lista, String ruta) throws IOException {
         // Borra el contenido del archivo
         Files.write(Paths.get(ruta), new byte[0]); // Escribe un array de bytes vacío para limpiar el archivo
 
-
+        // escribir en txt
+        /*
         for (int i = 0; i < lista.size(); i++) {
             try {
                 Files.writeString(Paths.get(ruta), lista.get(i).toString(),  StandardOpenOption.APPEND);
@@ -194,15 +118,24 @@ public class Main {
                 throw new RuntimeException(e);
             }
         }
+
+        */
+
+        // escribir en binario
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(ruta))) {
+            objectOutputStream.writeObject(lista);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Objetos Funko escritos en el archivo backup.dat");
     }
 
-     public static List restore(String ruta) throws IOException {
+    public static List restore(String ruta) throws IOException {
 
+        // Restaurar de .txt
+        /*
         Stream<String> contenidoFichero = Files.lines(Paths.get(ruta));
-
         List<List<String>> funkosTxtString = contenidoFichero.map(l -> Arrays.asList(l.split(COMMA_DELIMITER))).toList();
-
-        List<Funko> funkosTxtFunkos = new ArrayList<>();
 
         for (int i = 0; i < funkosTxtString.size(); i++) {
             List<String> unFunko = funkosTxtString.get(i);
@@ -217,11 +150,70 @@ public class Main {
 
             funkosTxtFunkos.add(ejemplo);
         }
-
         return funkosTxtFunkos;
+        */
 
+        // Restaurar de .dat
+        List<Funko> funkosDatFunkos = new ArrayList<>();
+
+        // Leer la lista de objetos Persona del archivo .dat
+        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(ruta))) {
+            try {
+                funkosDatFunkos = (List<Funko>) objectInputStream.readObject();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Objetos Funko leídos del archivo backup.dat");
+        return funkosDatFunkos;
+    }
+
+    public static void masCaro(List<Funko> lista) {
+        // SE PODRÍA HACER MEJOR
+        double precioMax = lista.stream()
+                .map(Funko::getPrecio)
+                .max(Double::compareTo)
+                .orElse(null);
+        // Funko más caro: NOMBRE
+        System.out.println("FUNKO MÁS CARO:");
+        lista.stream()
+                .filter(funko -> funko.getPrecio() == precioMax)
+                .map(Funko::getNombre)
+                .forEach(System.out::println);
 
     }
 
+    public static void precioMedio(List<Funko> lista){
+        // Para conseguir dos decimales y € al final
+        Locale locale = new Locale("es", "ES"); // Definir la localidad para español
+        NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale); // Obtener un formateador de moneda para la localidad española
+        formatoMoneda.setMaximumFractionDigits(2); // Establecer el número de decimales a dos
+
+        double mediaPrecioFunkos = lista.stream()
+                .mapToDouble(Funko::getPrecio)
+                .average().getAsDouble();
+
+        String montoFormateado = formatoMoneda.format(mediaPrecioFunkos);
+        System.out.println( "PRECIO MEDIO: " + montoFormateado);
+    }
+
+    public static void agrupadoPorModelo(List<Funko> lista, String modelo){
+        System.out.println("FUNKOS "+modelo+":");
+        lista.stream()
+                .filter(funko -> Objects.equals(funko.getModelo(), modelo))
+                .map(Funko::getNombre)
+                .forEach(System.out::println);
+    }
+
+    public static void cantidadPorModelo(List<Funko> lista, String modelo){
+        System.out.println("NÚMERO DE FUNKOS "+modelo+":");
+        long cantidadMarvel = lista.stream()
+                .filter(funko -> Objects.equals(funko.getModelo(), modelo))
+                .count();
+
+        System.out.println(cantidadMarvel);
+    }
 
 }
