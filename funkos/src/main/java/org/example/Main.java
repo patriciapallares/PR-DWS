@@ -24,7 +24,7 @@ public class Main {
             masCaro(funkosFunkos);
 
             precioMedio(funkosFunkos);
-
+/*
             agrupadoPorModelo(funkosFunkos, "MARVEL");
             agrupadoPorModelo(funkosFunkos, "DISNEY");
             agrupadoPorModelo(funkosFunkos, "ANIME");
@@ -36,7 +36,7 @@ public class Main {
             cantidadPorModelo(funkosFunkos, "OTROS");
 
             funkosPorAnyo(funkosFunkos, 2023);
-
+*/
             // ruta de clase
             String miRutaBackup = "/home/daw2/Escriptori/PR-DWS/funkos/src/main/resources/backup.dat";
 
@@ -145,12 +145,13 @@ public class Main {
     }
 
 
-    public static void masCaro(List<Funko> lista) {
+    public static Double masCaro(List<Funko> lista) {
         // SE PODRÍA HACER MEJOR
-        double precioMax = lista.stream()
+        Double precioMax = lista.stream()
                 .map(Funko::getPrecio)
                 .max(Double::compareTo)
                 .orElse(null);
+
         // Funko más caro: NOMBRE
         System.out.println("FUNKO MÁS CARO:");
         lista.stream()
@@ -158,20 +159,22 @@ public class Main {
                 .map(Funko::getNombre)
                 .forEach(System.out::println);
 
+        return precioMax;
     }
 
-    public static void precioMedio(List<Funko> lista) {
+    public static Double precioMedio(List<Funko> lista) {
         // Para conseguir dos decimales y € al final
         Locale locale = new Locale("es", "ES"); // Definir la localidad para español
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale); // Obtener un formateador de moneda para la localidad española
         formatoMoneda.setMaximumFractionDigits(2); // Establecer el número de decimales a dos
 
-        double mediaPrecioFunkos = lista.stream()
+        Double mediaPrecioFunkos = lista.stream()
                 .mapToDouble(Funko::getPrecio)
                 .average().getAsDouble();
 
         String montoFormateado = formatoMoneda.format(mediaPrecioFunkos);
         System.out.println("PRECIO MEDIO: " + montoFormateado);
+        return mediaPrecioFunkos;
     }
 
     public static void agrupadoPorModelo(List<Funko> lista, String modelo) {
