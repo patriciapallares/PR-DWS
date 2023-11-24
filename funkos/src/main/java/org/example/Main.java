@@ -12,10 +12,11 @@ import java.util.stream.Stream;
 
 public class Main {
     private final static String COMMA_DELIMITER = ",";
+
     public static void main(String[] args) throws IOException {
         // Lectura de ficheros CSV con Files.lines en java.nio
 
-        try{
+        try {
             // ruta del mac
             String miRutaFunkos = "/Users/patriciapallares/IdeaProjects/PR-DWS/funkos/src/main/resources/funkos.csv";
 
@@ -47,7 +48,7 @@ public class Main {
             // List<Funko> funkosRestored = restore(miRutaBackup);
 
             // TODO TESTEAR LOS CASOS DE LOS MÉTODOS CREADOS USANDO JUNIT Y MOCKITO
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace(System.out);
         }
 
@@ -174,6 +175,7 @@ public class Main {
 
         String montoFormateado = formatoMoneda.format(mediaPrecioFunkos);
         System.out.println("PRECIO MEDIO: " + montoFormateado);
+
         return mediaPrecioFunkos;
     }
 
@@ -184,6 +186,18 @@ public class Main {
                 .map(Funko::getNombre)
                 .forEach(System.out::println);
     }
+
+    public static List agrupadoPorModeloTest(List<Funko> lista, String modelo) {
+        List<Funko> listaRetornar = new ArrayList<>();
+        System.out.println("FUNKOS " + modelo + ":");
+        lista.stream()
+                .filter(funko -> Objects.equals(funko.getModelo(), modelo))
+                .map(Funko::getNombre)
+                .forEach(System.out::println);
+        return lista.stream()
+                .filter(funko -> Objects.equals(funko.getModelo(), modelo)).toList();
+    }
+
 
     public static void cantidadPorModelo(List<Funko> lista, String modelo) {
         System.out.println("NÚMERO DE FUNKOS " + modelo + ":");
