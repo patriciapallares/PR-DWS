@@ -12,10 +12,11 @@ import java.util.stream.Stream;
 
 public class Main {
     private final static String COMMA_DELIMITER = ",";
+
     public static void main(String[] args) throws IOException {
         // Lectura de ficheros CSV con Files.lines en java.nio
 
-        try{
+        try {
             // ruta del mac
             String miRutaFunkos = "/Users/patriciapallares/IdeaProjects/PR-DWS/funkos/src/main/resources/funkos.csv";
 
@@ -47,7 +48,7 @@ public class Main {
             // List<Funko> funkosRestored = restore(miRutaBackup);
 
             // TODO TESTEAR LOS CASOS DE LOS MÉTODOS CREADOS USANDO JUNIT Y MOCKITO
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace(System.out);
         }
 
@@ -82,6 +83,14 @@ public class Main {
         // Borra el contenido del archivo
         Files.write(Paths.get(ruta), new byte[0]); // Escribe un array de bytes vacío para limpiar el archivo
 
+        // escribir en binario
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(ruta))) {
+            objectOutputStream.writeObject(lista);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Objetos Funko escritos en el archivo backup.dat");
+
         // escribir en txt
         // hago el backup como si fuera csv para que el restore sea más sencillo
         /*
@@ -94,17 +103,22 @@ public class Main {
         }
 
         */
-
-        // escribir en binario
-        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(ruta))) {
-            objectOutputStream.writeObject(lista);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println("Objetos Funko escritos en el archivo backup.dat");
     }
 
     public static List restore(String ruta) throws IOException {
+        // Restaurar de .dat
+        List<Funko> funkosDatFunkos = new ArrayList<>();
+        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(ruta))) {
+            try {
+                funkosDatFunkos = (List<Funko>) objectInputStream.readObject();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Objetos Funko leídos del archivo backup.dat");
+        return funkosDatFunkos;
 
         // Restaurar de .txt
         /*
@@ -127,21 +141,10 @@ public class Main {
         return funkosTxtFunkos;
         */
 
-        // Restaurar de .dat
-        List<Funko> funkosDatFunkos = new ArrayList<>();
+
 
         // Leer la lista de objetos Persona del archivo .dat
-        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(ruta))) {
-            try {
-                funkosDatFunkos = (List<Funko>) objectInputStream.readObject();
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println("Objetos Funko leídos del archivo backup.dat");
-        return funkosDatFunkos;
+
     }
 
 
@@ -174,6 +177,7 @@ public class Main {
 
         String montoFormateado = formatoMoneda.format(mediaPrecioFunkos);
         System.out.println("PRECIO MEDIO: " + montoFormateado);
+
         return mediaPrecioFunkos;
     }
 
@@ -184,6 +188,18 @@ public class Main {
                 .map(Funko::getNombre)
                 .forEach(System.out::println);
     }
+
+    public static List agrupadoPorModeloTest(List<Funko> lista, String modelo) {
+        List<Funko> listaRetornar = new ArrayList<>();
+        System.out.println("FUNKOS " + modelo + ":");
+        lista.stream()
+                .filter(funko -> Objects.equals(funko.getModelo(), modelo))
+                .map(Funko::getNombre)
+                .forEach(System.out::println);
+        return lista.stream()
+                .filter(funko -> Objects.equals(funko.getModelo(), modelo)).toList();
+    }
+
 
     public static void cantidadPorModelo(List<Funko> lista, String modelo) {
         System.out.println("NÚMERO DE FUNKOS " + modelo + ":");

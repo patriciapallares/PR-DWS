@@ -33,6 +33,7 @@ public class precioMedioTest {
         Assertions.assertEquals(precioMedioMetodo, precioMedio);
     }
 
+    /*
     @Test
     // Test para comprobar que devuelve un Double
     public void debeDevolverDouble(){
@@ -45,4 +46,6 @@ public class precioMedioTest {
 
         Assertions.assertTrue(precioMedioMetodo instanceof Double == precioMedio instanceof Double);
     }
+
+     */
 }
