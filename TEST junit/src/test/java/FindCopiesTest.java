@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Assertions;
 import java.util.List;
 
 public class FindCopiesTest {
-
     @Test
     public void shouldFindCopiesOfABook() {
         final Book bookToBeFound = new Book("libro-que-debe-encontrase", "un titulo 1", "un autor 1");
