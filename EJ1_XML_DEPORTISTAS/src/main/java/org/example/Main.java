@@ -21,20 +21,24 @@ public class Main {
         AtletaFemenina atleta2 = new AtletaFemenina("Jessica", List.of("A", "B", "C"), 25, "USA");
         AtletaFemenina atleta3 = new AtletaFemenina("Maria", List.of("A", "B"), 19, "España");
 
-        // ColeccionAtletas listaAtletas = new ColeccionAtletas(List.of(atleta1, atleta2, atleta3));
-
         List<AtletaFemenina> listaAtletas  = new ArrayList<>();
 
         listaAtletas.add(atleta1);
         listaAtletas.add(atleta2);
         listaAtletas.add(atleta3);
 
-        escribirListaObjetosXml(listaAtletas, miRutaAtletas_Femeninasxml);
+
+     //   ColeccionAtletas listaAtletasColeccion = new ColeccionAtletas(List.of(atleta1, atleta2, atleta3));
+
+        ColeccionAtletas listalista = new ColeccionAtletas(listaAtletas);
+
+        escribirListaObjetosXml(listalista.getListaAtletas(), miRutaAtletas_Femeninasxml);
 
         List<AtletaFemenina> listaAtletasRestaurado  = new ArrayList<>();
 
         listaAtletasRestaurado = leerArrayObjetosXml(miRutaAtletas_Femeninasxml);
 
+        listalista.getListaAtletas().stream().map(AtletaFemenina::getNombre).forEach(System.out::println);
     }
 
     // Si queremos serializar una lista de objetos, se pueden manipular las etiquetas XML creando

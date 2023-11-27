@@ -2,8 +2,9 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 public class ColeccionAtletas {
-    private List<AtletaFemenina> listaAtletas;
+    List<AtletaFemenina> listaAtletas;
 
     // Constructor generado por IntelliJ
     public ColeccionAtletas(List<AtletaFemenina> listaAtletas) {
@@ -14,4 +15,15 @@ public class ColeccionAtletas {
     public ColeccionAtletas(AtletaFemenina[] atletas) {
         this.listaAtletas = Arrays.asList(atletas);
     }
+
+    public void anyadirAtleta(AtletaFemenina atleta){
+        this.listaAtletas.add(atleta);
+        System.out.println("Se ha añadido una atleta");
+    }
+
+    public List<AtletaFemenina> getListaAtletas() {
+        return listaAtletas;
+    }
+
+
 }

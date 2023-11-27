@@ -4,13 +4,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/Ficheros/pom.xml" />
-        <option value="$PROJECT_DIR$/serializando/pom.xml" />
-        <option value="$PROJECT_DIR$/ejercicioTesting/pom.xml" />
-        <option value="$PROJECT_DIR$/testunitarioJunit/pom.xml" />
-        <option value="$PROJECT_DIR$/FILES intro/pom.xml" />
-        <option value="$PROJECT_DIR$/EJ1_XML_DEPORTISTAS/pom.xml" />
-        <option value="$PROJECT_DIR$/EJ1_CSV_FUNKOS_SOLUCION/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

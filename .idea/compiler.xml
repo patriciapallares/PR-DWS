@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="FILES intro" />
         <module name="EJ1_XML_DEPORTISTAS" />
+        <module name="EJ1_CSV_FUNKOS_SOLUCION" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
