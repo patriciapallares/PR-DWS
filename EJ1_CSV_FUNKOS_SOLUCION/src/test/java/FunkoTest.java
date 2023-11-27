@@ -2,6 +2,7 @@
 // import ejercicios.ejercicio2.Funko;
 import org.junit.Test;
 import org.example.Funko;
+import org.example.ColecciondeFunkos;
 
 import java.util.ArrayList;
 import java.util.List;
