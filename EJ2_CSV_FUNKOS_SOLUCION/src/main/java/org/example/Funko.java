@@ -13,6 +13,7 @@ public class Funko implements Serializable {
     //private String fechaLanzamiento;
     private LocalDate fechaLanzamiento;
 
+    // constructor pasando Strings como parámetros y parseando el precio y la fecha
     public Funko(String id, String nombre, String modelo, String precioString, String fechaLanzamiento) {
         this.id = id;
         this.nombre = nombre;
@@ -24,6 +25,7 @@ public class Funko implements Serializable {
     public Funko() {
     }
 
+    // constructor pasando lista de Strings como parámetros, obteniendo los valores de la posición parseando el precio y la fecha
     //para la opción 3
     public Funko(List<String> lista) {
         this.id = lista.get(0);
@@ -34,6 +36,7 @@ public class Funko implements Serializable {
         // this.fechaLanzamiento = LocalDate.parse(lista.get(4), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
     }
 
+    // método para convertir String to Double
     private double precioStringToDouble(String precioString) {
         try{
             return Double.parseDouble(precioString);
