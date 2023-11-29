@@ -1,0 +1,31 @@
+<ArrayList>
+  <item>
+    <nombre>Carolina</nombre>
+    <prueba>
+      <prueba>A</prueba>
+      <prueba>B</prueba>
+      <prueba>C</prueba>
+    </prueba>
+    <edad>21</edad>
+    <pais>España</pais>
+  </item>
+  <item>
+    <nombre>Jessica</nombre>
+    <prueba>
+      <prueba>A</prueba>
+      <prueba>B</prueba>
+      <prueba>C</prueba>
+    </prueba>
+    <edad>25</edad>
+    <pais>USA</pais>
+  </item>
+  <item>
+    <nombre>Maria</nombre>
+    <prueba>
+      <prueba>A</prueba>
+      <prueba>B</prueba>
+    </prueba>
+    <edad>19</edad>
+    <pais>España</pais>
+  </item>
+</ArrayList>
