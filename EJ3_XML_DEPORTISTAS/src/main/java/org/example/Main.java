@@ -14,8 +14,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Path miRutaAtletas_Femeninasxml = Paths.get("/home/daw2/Escriptori/PR-DWS/EJ1_XML_DEPORTISTAS/src/main/resources/atletas_femeninas.xml");
-        String stringg = "/home/daw2/Escriptori/PR-DWS/EJ1_XML_DEPORTISTAS/src/main/resources/atletas_femeninas.xml";
+
+        Path miRutaAtletas_Femeninasxml = Path.of("src","main","resources","atletas_femeninas.xml");
+        // String stringg = "/home/daw2/Escriptori/PR-DWS/EJ1_XML_DEPORTISTAS/src/main/resources/atletas_femeninas.xml";
 
         AtletaFemenina atleta1 = new AtletaFemenina("Carolina", List.of("A", "B", "C"), 21, "España");
         AtletaFemenina atleta2 = new AtletaFemenina("Jessica", List.of("A", "B", "C"), 25, "USA");
@@ -23,34 +24,31 @@ public class Main {
 
         List<AtletaFemenina> listaAtletas  = new ArrayList<>();
 
-        listaAtletas.add(atleta1);
-        listaAtletas.add(atleta2);
-        listaAtletas.add(atleta3);
+        ColeccionAtletas coleccionListaAtletas = new ColeccionAtletas(listaAtletas);
+
+        coleccionListaAtletas.anyadirAtleta(atleta1);
+        coleccionListaAtletas.anyadirAtleta(atleta2);
+        coleccionListaAtletas.anyadirAtleta(atleta3);
+        coleccionListaAtletas.anyadirAtleta(atleta1);
+
+        escribirListaObjetosXml(coleccionListaAtletas.getListaAtletas(), miRutaAtletas_Femeninasxml);
+
+        // guardo la Lista retornada en una lista
+        List<AtletaFemenina> listaAtletasRestaurado  = leerArrayObjetosXml(miRutaAtletas_Femeninasxml);
 
 
-     //   ColeccionAtletas listaAtletasColeccion = new ColeccionAtletas(List.of(atleta1, atleta2, atleta3));
-
-        ColeccionAtletas listalista = new ColeccionAtletas(listaAtletas);
-
-        escribirListaObjetosXml(listalista.getListaAtletas(), miRutaAtletas_Femeninasxml);
-
-        List<AtletaFemenina> listaAtletasRestaurado  = new ArrayList<>();
-
-        listaAtletasRestaurado = leerArrayObjetosXml(miRutaAtletas_Femeninasxml);
-
-        listalista.getListaAtletas().stream().map(AtletaFemenina::getNombre).forEach(System.out::println);
+        listaAtletasRestaurado.stream().map(AtletaFemenina::getNombre).forEach(System.out::println);
     }
 
     // Si queremos serializar una lista de objetos, se pueden manipular las etiquetas XML creando
     // una clase auxiliar que contenga la lista de objetos y que tenga la etiqueta raíz
-    public static void escribirListaObjetosXml(List listaAtletasParam, Path ruta) {
-
+    public static void escribirListaObjetosXml(List lista, Path ruta) {
         try {
             Files.deleteIfExists(ruta);
             XmlMapper xmlMapper = new XmlMapper();
             // La siguiente línea es opcional, pero hace que el JSON se muestre con formato
             xmlMapper.enable(SerializationFeature.INDENT_OUTPUT);
-            xmlMapper.writeValue(ruta.toFile(), listaAtletasParam);
+            xmlMapper.writeValue(ruta.toFile(), lista);
         } catch (IOException e) {
             System.out.println("El fichero no existe");
         }

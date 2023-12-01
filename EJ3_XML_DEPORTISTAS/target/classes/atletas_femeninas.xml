@@ -28,4 +28,14 @@
     <edad>19</edad>
     <pais>España</pais>
   </item>
+  <item>
+    <nombre>Carolina</nombre>
+    <prueba>
+      <prueba>A</prueba>
+      <prueba>B</prueba>
+      <prueba>C</prueba>
+    </prueba>
+    <edad>21</edad>
+    <pais>España</pais>
+  </item>
 </ArrayList>

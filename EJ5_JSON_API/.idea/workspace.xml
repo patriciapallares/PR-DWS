@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38a9194b-0825-4d77-ba29-26d8a3abe392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Api.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Servicios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Receta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/AtletaFemenina.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/AtletaFemenina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/ColeccionAtletas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/ColeccionAtletas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/resources/atletas_femeninas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/resources/atletas_femeninas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/atletas_femeninas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/atletas_femeninas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/AtletaFemenina.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/AtletaFemenina.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/ColeccionAtletas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/ColeccionAtletas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Api.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Servicios.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +38,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;patriciapallares&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="dafc525b-417f-4467-8034-0bc804458899" />
+        <option name="url" value="https://github.com/patriciapallares/PR-DWS.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Yqf5o7CHAgNIf1BdRCzDHUqaap" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,6 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/daw2/Escriptori/PR-DWS/EJ5_JSON_API",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +82,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Api">
     <configuration name="Api" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Api" />
@@ -101,6 +130,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701257852022</updated>
       <workItem from="1701257853166" duration="2211000" />
+      <workItem from="1701420165749" duration="1769000" />
+      <workItem from="1701422570169" duration="1947000" />
     </task>
     <servers />
   </component>
