@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38a9194b-0825-4d77-ba29-26d8a3abe392" name="Changes" comment="api casi funciona">
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/java/org/example/Drivers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/java/org/example/MainAna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/java/org/example/MainPatri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/java/org/example/Receta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/resources/ejemploDrivers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/resources/ejemploReceta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/AtletaFemenina.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/AtletaFemenina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/atletas_femeninas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/atletas_femeninas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/AtletaFemenina.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/AtletaFemenina.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="38a9194b-0825-4d77-ba29-26d8a3abe392" name="Changes" comment="api casi funciona" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,29 +45,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Api.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Servicios.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/daw2/Escriptori/PR-DWS/EJ5_JSON_API",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Api.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Servicios.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/daw2/Escriptori/PR-DWS/EJ5_JSON_API&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
@@ -161,6 +142,7 @@
       <workItem from="1701422570169" duration="2050000" />
       <workItem from="1701689239960" duration="5176000" />
       <workItem from="1702291948724" duration="1353000" />
+      <workItem from="1702293478809" duration="557000" />
     </task>
     <task id="LOCAL-00001" summary="CAMBIOS EN ATLETAS Y OPENAPI">
       <option name="closed" value="true" />

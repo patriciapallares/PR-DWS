@@ -4,25 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fea2d69f-b839-4b6a-8697-d84abfd73ac9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Drivers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MainAna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MainPatri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Receta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ejemploDrivers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ejemploReceta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/AtletaFemenina.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/AtletaFemenina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/atletas_femeninas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/atletas_femeninas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/AtletaFemenina.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/AtletaFemenina.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ5_JSON_API/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fea2d69f-b839-4b6a-8697-d84abfd73ac9" name="Changes" comment="api funciona con lo de Ana">
+      <change afterPath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/src/main/resources/funkos.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/src/main/java/org/example/ColeccionProductos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/src/main/java/org/example/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/src/main/resources/Ej03-LeerFichero.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ5_JSON_API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EJ5_JSON_API/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Drivers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MainAna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MainPatri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ejemploDrivers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ejemploReceta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ejemploRecetas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ejemploRecetas.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +39,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ZOU2MAs3tK50jFmrXiXNaHkXNT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -53,12 +53,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
     "Application.MainPatri.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/daw2/Escriptori/PR-DWS/EJ5_JSON_API",
+    "last_opened_file_path": "/home/daw2/Escriptori/PR-DWS/EJ5_JSON_API_otrointento",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,7 +68,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="EJ5_JSON_API_otrointento" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainPatri" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.MainPatri" />
       <module name="EJ5_JSON_API_otrointento" />
@@ -83,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainPatri" />
       </list>
     </recent_temporary>
@@ -102,8 +117,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702292412049</updated>
-      <workItem from="1702292413227" duration="1368000" />
+      <workItem from="1702292413227" duration="1965000" />
+      <workItem from="1702294952181" duration="339000" />
+      <workItem from="1702298056336" duration="576000" />
     </task>
+    <task id="LOCAL-00001" summary="api funciona con lo de Ana">
+      <option name="closed" value="true" />
+      <created>1702294013445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702294013445</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="api funciona con lo de Ana" />
+    <option name="LAST_COMMIT_MESSAGE" value="api funciona con lo de Ana" />
   </component>
 </project>
