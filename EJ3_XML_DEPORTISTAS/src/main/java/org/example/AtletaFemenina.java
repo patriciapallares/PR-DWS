@@ -15,13 +15,6 @@ import lombok.NoArgsConstructor;
 @JacksonXmlRootElement(localName = "atleta")
 public class AtletaFemenina {
 
-/*
-• nombre (String): El nombre de la atleta.
-• prueba (List<String>): La prueba en la que compite.
-• edad (int): La edad de la atleta.
-• pais (String): El país de origen de la atleta.
-*/
-
     private String nombre;
     @JacksonXmlElementWrapper(localName = "pruebas")
     @JacksonXmlProperty(localName = "prueba")

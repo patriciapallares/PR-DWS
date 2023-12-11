@@ -1,0 +1,21 @@
+[ {
+  "idMeal" : "52768",
+  "strMeal" : "Apple Frangipan Tart",
+  "strCategory" : "Dessert",
+  "strArea" : "British"
+}, {
+  "idMeal" : "52893",
+  "strMeal" : "Apple & Blackberry Crumble",
+  "strCategory" : "Dessert",
+  "strArea" : "British"
+}, {
+  "idMeal" : "53049",
+  "strMeal" : "Apam balik",
+  "strCategory" : "Dessert",
+  "strArea" : "Malaysian"
+}, {
+  "idMeal" : "53050",
+  "strMeal" : "Ayam Percik",
+  "strCategory" : "Chicken",
+  "strArea" : "Malaysian"
+} ]
