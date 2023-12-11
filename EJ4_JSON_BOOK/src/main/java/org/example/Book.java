@@ -18,6 +18,6 @@ public class Book implements Serializable{
     private String titulo;
     private String autor;
     private int paginas;
-    private String anyoPublicacion;
+    private int anyoPublicacion;
 
 }
