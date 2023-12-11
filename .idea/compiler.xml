@@ -7,13 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="FILES intro" />
-        <module name="EJ3_XML_DEPORTISTAS" />
-        <module name="EJ2_CSV_FUNKOS_SOLUCION" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="EJ1_CSV_FUNKOS_SOLUCION" target="17" />
-      <module name="EJ1_XML_DEPORTISTAS" target="17" />
+      <module name="EJ2_CSV_FUNKOS_SOLUCION" target="17" />
+      <module name="EJ3_XML_DEPORTISTAS" target="17" />
       <module name="ejercicioTesting" target="17" />
       <module name="SERIALIZATION intro" target="17" />
       <module name="TEST junit" target="17" />

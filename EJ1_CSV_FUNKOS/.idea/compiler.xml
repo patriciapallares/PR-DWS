@@ -7,7 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="funkos" />
+        <module name="EJ3_XML_DEPORTISTAS" />
+        <module name="EJ1_XML_DEPORTISTAS" />
       </profile>
     </annotationProcessing>
   </component>
