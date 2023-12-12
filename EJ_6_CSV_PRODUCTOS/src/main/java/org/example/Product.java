@@ -33,8 +33,9 @@ public class Product implements Comparable<Product> {
         this.unitPrice = unitPrice;
         this.unitsInStock = unitsInStock;
     }
+
     // constructor vacío
-    public Product(){
+    public Product() {
 
     }
 
@@ -98,7 +99,7 @@ public class Product implements Comparable<Product> {
                 this.getUnitsInStock() + coma + coma + coma;
 
         try {
-            if (Files.exists(ruta)){
+            if (Files.exists(ruta)) {
                 Files.writeString(ruta, "\n" + producto, APPEND);
             }
         } catch (IOException ex) {
@@ -156,6 +157,17 @@ public class Product implements Comparable<Product> {
                 ", unitPrice=" + unitPrice +
                 ", unitsInStock=" + unitsInStock +
                 '}';
+    }
+
+    public String obtenerNombreYUnitsInStockString() {
+        return
+                "Nombre: " + name + ", Unidades: " + unitsInStock;
+
+    }
+
+    public void obtenerNombreYUnitsInStockVoid() {
+        System.out.println("Nombre: " + name + ", Unidades: " + unitsInStock);
+
     }
 
 

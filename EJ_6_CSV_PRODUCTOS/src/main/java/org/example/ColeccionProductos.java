@@ -12,12 +12,18 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import static java.nio.file.Files.lines;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class ColeccionProductos implements Serializable {
     final String COMMA_DELIMITER = ",";
-    List<Product> listaCSV = new ArrayList<>();
+    // List<Product> listaCSV = new ArrayList<>();
 
-    List<Product> listaCSV2 = new ArrayList<Product>();
+    List<Product> lista = new ArrayList<Product>();
 
 
     public ColeccionProductos(Path path) throws IOException {
@@ -27,7 +33,7 @@ public class ColeccionProductos implements Serializable {
 
             List<String> linea = Files.readAllLines(Path.of(".", "src", "main", "resources", "Ej03-LeerFichero.csv"));
             String[] fun;
-            System.out.println("Toda la info: ");
+           // System.out.println("Toda la info: ");
 
             for (int i = 1; i < linea.size(); i++) {
                 Product productoo = new Product();
@@ -38,8 +44,8 @@ public class ColeccionProductos implements Serializable {
                 productoo.setCategory(Integer.parseInt(fun[3]));
                 productoo.setUnitPrice(Double.parseDouble(fun[5]));
                 productoo.setUnitsInStock(Integer.parseInt(fun[6]));
-                listaCSV2.add(productoo);
-                System.out.println(productoo.toString());
+                lista.add(productoo);
+              //  System.out.println(productoo.toString());
             }
 
 
@@ -48,4 +54,8 @@ public class ColeccionProductos implements Serializable {
             e.printStackTrace(System.out);
         }
     }
+
+
+
+
 }
