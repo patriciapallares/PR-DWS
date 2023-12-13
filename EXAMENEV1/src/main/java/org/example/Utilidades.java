@@ -29,7 +29,6 @@ public class Utilidades {
             // redundante
             String sexo = sexoParam;
 
-
             for (int i = 1; i < pelisOscarizadasString.size(); i++) {
 
 
@@ -55,7 +54,6 @@ public class Utilidades {
 
     public static List convertirPeliculasOscarizadasEnActores(List<PeliculaOscarizada> lista) {
         List<Actor> listaActores = new ArrayList<>();
-
 
         for (int i = 0; i < lista.size(); i++) {
 
