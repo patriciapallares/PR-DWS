@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72b34388-eff6-43b6-b9fa-d3351ed485cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/target/classes/backup.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/target/classes/funkos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/target/classes/org/example/Funko.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/target/test-classes/masCaroTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS/target/test-classes/precioMedioTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_CSV_FUNKOS_SOLUCION/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/src/main/java/org/example/DeportistaFemenina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/src/main/java/org/example/OperacionesJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS/src/main/resources/deportistas_femeninas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/src/main/java/org/example/DeportistaFemenina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/src/main/java/org/example/DeportistaFemeninaLombok.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/src/main/java/org/example/OperacionesJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ1_JSON_DEPORTISTAS_SOLUCION/src/main/resources/deportistas_femeninas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/src/main/java/org/example/Funko.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/src/main/resources/backup.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/src/main/resources/funkos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/src/test/java/agrupadoPorModeloTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/src/test/java/masCaroTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS/src/test/java/precioMedioTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/src/main/java/org/example/ColecciondeFunkos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/src/main/java/org/example/Funko.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/src/main/resources/funkos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/src/test/java/FunkoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/target/classes/org/example/ColecciondeFunkos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/target/classes/org/example/Funko.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_CSV_FUNKOS_SOLUCION/target/test-classes/FunkoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/src/main/java/org/example/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/src/main/java/org/example/OperacionesJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS/src/main/resources/libros.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/src/main/java/org/example/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/src/main/java/org/example/LibroManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ2_JSON_LIBROS_SOLUCION/src/main/resources/libros.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/AtletaFemenina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/ColeccionAtletas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/src/main/resources/atletas_femeninas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/atletas_femeninas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/AtletaFemenina.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/ColeccionAtletas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ3_XML_DEPORTISTAS/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/src/main/java/org/example/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK/src/main/resources/libros.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/.idea/EJ4_JSON_BOOK_REPETIDO_TERMINAR.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/target/classes/libros.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/target/classes/org/example/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ4_JSON_BOOK_REPETIDO_TERMINAR/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API/src/main/java/org/example/Receta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/java/org/example/Receta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ5_JSON_API_otrointento/src/main/resources/ejemploRecetas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/src/main/java/org/example/ColeccionProductos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/src/main/java/org/example/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EJ_6_CSV_PRODUCTOS/src/main/resources/Ej03-LeerFichero.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/main/java/org/example/Actor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/main/java/org/example/Pelicula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/main/java/org/example/PeliculaOscarizada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/main/java/org/example/Utilidades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/main/resources/oscar_age_female.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/main/resources/oscar_age_male.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/main/resources/salida/actores.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXAMENEV1/src/test/java/actoresMasJovenesEnGanarUnOscarTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/clientes.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/clientes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/FicherosDeIntercambio/Entities/Lenguaje2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/FicherosDeIntercambio/Entities/ListaLenguajes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/FicherosDeIntercambio/OperacionesJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/FicherosDeIntercambio/OperacionesXML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/FicherosDeIntercambio/TratamientoCSV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/serializacion/Contacto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/serializacion/ContactoInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/serializacion/ContactoOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/java/org/example/serializacion/Uso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resource/fichero.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resources/ejercicioPlanta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resources/escritura.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resources/escritura.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resources/funkos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resources/lenguaje.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resources/lenguaje.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resources/lenguajes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FILES intro/src/main/resources/lenguajes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PDFS/Ejercicio 3 - Operaciones con XML.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/clientes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/src/main/java/org/example/Contacto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/src/main/java/org/example/ContactoInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/src/main/java/org/example/ContactoOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERIALIZATION intro/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/build/classes/collection/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/build/classes/collection/BookCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/build/classes/collection/Collection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/collection.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/out/production/collection/collection/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/out/production/collection/collection/BookCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/out/production/collection/collection/Collection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/src/collection/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/src/collection/BookCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/src/collection/Collection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM collection/src/collection/StreamBookCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/EJEMPLOSTREAM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/src/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/src/creation/SreamsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/src/creation/StreamEmpty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/src/creation/StreamOf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STREAM examples/src/creation/StreamsArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/main/java/org/example/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/main/java/org/example/BookCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/main/java/org/example/CollectionIsEmpty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/main/java/org/example/ExpectedToFindAtLeastABook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/main/java/org/example/NoBooksFound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/test/java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/test/java/FindCopiesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/test/java/FindOrFailTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/test/java/FindTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/test/java/RudimentaryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST junit/src/test/java/ejercicio4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/target/classes/backup.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/target/classes/funkos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/target/classes/org/example/Funko.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/target/test-classes/agrupadoPorModeloTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/target/test-classes/masCaroTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funkos/target/test-classes/precioMedioTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/src/main/java/org/example/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/src/main/java/org/example/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/src/main/resources/personas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapeoJSON/src/main/resources/productos.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ZiOAgogqKEY9mO9DJHs4aBI0UQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/daw2/Escriptori/PR-DWS/ejemploConexionPDBC",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72b34388-eff6-43b6-b9fa-d3351ed485cd" name="Changes" comment="" />
+      <created>1702901293972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702901293972</updated>
+      <workItem from="1702901295319" duration="110000" />
+      <workItem from="1702901415925" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
