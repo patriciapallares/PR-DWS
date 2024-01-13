@@ -14,4 +14,7 @@ public class Piloto {
     private String surname;
     private String dob;
     private String nationality;
+    private String url;
+
+
 }
