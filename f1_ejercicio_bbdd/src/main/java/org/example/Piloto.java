@@ -8,13 +8,12 @@ import lombok.NoArgsConstructor;
 @Data
 public class Piloto {
 
-    private int driverid;
+
     private String code;
     private String forename;
     private String surname;
     private String dob;
     private String nationality;
     private String url;
-
 
 }

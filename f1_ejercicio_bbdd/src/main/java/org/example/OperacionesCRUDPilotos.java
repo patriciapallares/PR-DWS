@@ -9,9 +9,12 @@ import java.sql.*;
 
 public class OperacionesCRUDPilotos {
 
+
+
     // CrearPiloto(), que reciba un objeto Piloto y lo añada a la base de datos.
-    public void crearPiloto(Path ruta, Piloto pilotoParam) {
+    public static void crearPiloto(Path ruta, Piloto pilotoParam) {
         try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
+
             // Creamos ahora una sentencia de modificación, en este caso un INSERT
             // String insercionSQL = "INSERT or REPLACE INTO drivers (driverid, code, forename, surname, dob, nationality, url) VALUES (?, ?, ?, ?, ?, ?, ?)";
             String insercionSQL = "INSERT INTO drivers (code, forename, surname, dob, nationality, url) VALUES (?, ?, ?, ?, ?, ?)";
@@ -24,9 +27,7 @@ public class OperacionesCRUDPilotos {
             insercion.setString(5, pilotoParam.getNationality());
             insercion.setString(6, pilotoParam.getUrl());
 
-            //Ejecutamos la sentencia DML y recogemos el número de filas afectadas, si quisiéramos utilizarlo a posteriori
-            int filasAfectadas = insercion.executeUpdate();
-
+            System.out.println("He hecho algo?");
             // Finalmente, se deben cerrar las sentencias (cuando una sentencia se cierra, su objeto ResultSet también se cierra)
             insercion.close();
         } catch (SQLException e) {
@@ -39,7 +40,7 @@ public class OperacionesCRUDPilotos {
     // LeerPiloto(), que reciba un entero y devuelva un objeto Piloto con la información del piloto
     // con el driverid coincidente.
 
-    public void LeerPiloto(Path ruta, int paramID) {
+    public static void LeerPiloto(Path ruta, int paramID) {
         try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
 
             // Preparamos una sentencia que lanzaremos a través del PreparedStatement
@@ -78,7 +79,7 @@ public class OperacionesCRUDPilotos {
 
     // LeerPilotos(), que devuelva un listado completo de objetos Piloto.
 
-    public void LeerPilotos(Path ruta) {
+    public static void LeerPilotos(Path ruta) {
 
         try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
 
@@ -114,16 +115,14 @@ public class OperacionesCRUDPilotos {
     }
 
 
-    // ActualizarPiloto(), que reciba un objeto Piloto y actualice los datos del
+    // ActualizarPiloto(), que reciba un objeto Piloto, un entero y actualice los datos del
     // registro coincidente en la base de datos con el mismo driverid.
 
-    public static void ActualizarPiloto(Path ruta, Piloto pilotoParam) {
+    public static void ActualizarPiloto(Path ruta, Piloto pilotoParam, int paramID) {
         try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
 
             // Definir la consulta SQL de actualización
             String sql = "UPDATE Pilotos SET code = ?, forename = ?, forename = ?, dob = ?, nationality = ?, url = ? WHERE driverid = ?";
-
-            String insercionSQL = "INSERT INTO drivers (code, , surname, , , url) VALUES (?, ?, ?, ?, ?, ?)";
 
             // Preparar la sentencia SQL con los datos del piloto
             try (PreparedStatement pstmt = con.prepareStatement(sql)) {
@@ -151,7 +150,7 @@ public class OperacionesCRUDPilotos {
 
     // BorrarPiloto(), que reciba un objeto Piloto y lo elimine de la base de datos.
 
-    public void BorrarPiloto(Path ruta, Piloto pilotoParam) {
+    public static void BorrarPiloto(Path ruta, Piloto pilotoParam) {
         try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
 
             // Creamos una nueva sentencia de modificación, en este caso un DELETE para borrar el piloto insertado
@@ -172,6 +171,8 @@ public class OperacionesCRUDPilotos {
 
     // MostrarClasificacionPiloto(), que muestre la clasificación final del mundial
     // ordenada por puntos de los pilotos.
+
+
 
 
     // MostrarClasificacionConstructores(), que muestre la clasificación del mundial
