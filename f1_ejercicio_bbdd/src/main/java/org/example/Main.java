@@ -2,18 +2,21 @@ package org.example;
 
 import java.nio.file.Path;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Main {
 
     public static void main(String[] args) {
-        // URL de la BBDD
-        Path ruta = Path.of("src", "main", "resources", "f12006sqlite.db");
+        Piloto pilotoP = new Piloto( "PAT", "Patricia", "Pallarés", "1995-12-16", "Spanish", "URL");
 
-        Piloto pilotoParam = new Piloto( "JEJ", "Patricia", "Patri", "16-12-1994", "Spanish", "URL");
-
-        OperacionesCRUDPilotos.crearPiloto(ruta, pilotoParam);
+       // OperacionesCRUDNuevo.CrearPiloto(pilotoP);
 
 
+        Piloto pilotoNuevo = OperacionesCRUDNuevo.LeerPiloto(38);
+
+        System.out.println("nombre piloto nuevo: " + pilotoNuevo.getForename());
     }
+
 }

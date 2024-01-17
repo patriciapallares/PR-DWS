@@ -7,11 +7,12 @@ public class Main {
 
 
         String sentenciaSQL = "SELECT * FROM actores";
+        String ruta = "jdbc:postgresql://localhost:5432/mi-base";
         String usuario = "postgres";
         String contrasenya = "postgres";
 
         // están entre parentesis dentro del try para que cierre la ejecución automáticamente...
-        try(Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/mi-base", usuario, contrasenya);
+        try(Connection con = DriverManager.getConnection(ruta, usuario, contrasenya);
             PreparedStatement sentencia = con.prepareStatement(sentenciaSQL)){
 
             ResultSet resultados = sentencia.executeQuery();

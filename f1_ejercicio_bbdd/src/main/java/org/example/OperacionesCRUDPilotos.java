@@ -5,37 +5,17 @@ import java.sql.DriverManager;
 import java.nio.file.Path;
 import java.sql.SQLException;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class OperacionesCRUDPilotos {
 
 
+    static String ruta = "jdbc:postgresql://localhost:5432/mi-base";
+    static String usuario = "postgres";
+    static String contrasenya = "postgres";
 
-    // CrearPiloto(), que reciba un objeto Piloto y lo añada a la base de datos.
-    public static void crearPiloto(Path ruta, Piloto pilotoParam) {
-        try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
-
-            // Creamos ahora una sentencia de modificación, en este caso un INSERT
-            // String insercionSQL = "INSERT or REPLACE INTO drivers (driverid, code, forename, surname, dob, nationality, url) VALUES (?, ?, ?, ?, ?, ?, ?)";
-            String insercionSQL = "INSERT INTO drivers (code, forename, surname, dob, nationality, url) VALUES (?, ?, ?, ?, ?, ?)";
-            PreparedStatement insercion = con.prepareStatement(insercionSQL);
-
-            insercion.setString(1, pilotoParam.getCode());
-            insercion.setString(2, pilotoParam.getForename());
-            insercion.setString(3, pilotoParam.getSurname());
-            insercion.setString(4, pilotoParam.getDob());
-            insercion.setString(5, pilotoParam.getNationality());
-            insercion.setString(6, pilotoParam.getUrl());
-
-            System.out.println("He hecho algo?");
-            // Finalmente, se deben cerrar las sentencias (cuando una sentencia se cierra, su objeto ResultSet también se cierra)
-            insercion.close();
-        } catch (SQLException e) {
-            // Gestionar errores mediante excepciones
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            throw new RuntimeException(e);
-        }
-    }
 
     // LeerPiloto(), que reciba un entero y devuelva un objeto Piloto con la información del piloto
     // con el driverid coincidente.
@@ -79,7 +59,9 @@ public class OperacionesCRUDPilotos {
 
     // LeerPilotos(), que devuelva un listado completo de objetos Piloto.
 
-    public static void LeerPilotos(Path ruta) {
+    public static List<Piloto> LeerPilotos(Path ruta) {
+
+        List<Piloto> listaPilotos = new ArrayList<>();
 
         try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
 
@@ -91,6 +73,29 @@ public class OperacionesCRUDPilotos {
             // La consulta SELECT se ejecuta pasándola por el método executeQuery. Si la consulta devuelve datos,
             // estos estarán accesibles a través de un "conjunto de resultados" (ResultSet)
             ResultSet resultados = consulta.executeQuery();
+
+            System.out.println("Me ejecuto.");
+            while (resultados.next()) {
+
+                Piloto pilotoWhile = new Piloto();
+
+                pilotoWhile.setCode(resultados.getString("code"));
+                pilotoWhile.setDob(resultados.getString("formatted_dob"));
+                pilotoWhile.setUrl(resultados.getString("url"));
+                pilotoWhile.setSurname(resultados.getString("surename"));
+                pilotoWhile.setForename(resultados.getString("forename"));
+                pilotoWhile.setNationality(resultados.getString("nationality"));
+
+                listaPilotos.add(pilotoWhile);
+            }
+            // Finalmente, se deben cerrar las sentencias (cuando una sentencia se cierra, su objeto ResultSet también se cierra)
+            consulta.close();
+
+            return listaPilotos;
+
+            /*
+
+
 
             // Consumimos los resultados de la consulta
             System.out.format("\n%3s%5s%25s%16s%20s\n", "Id", "Cod", "Nombre", "Fecha Nac", "Nacionalidad");
@@ -104,8 +109,11 @@ public class OperacionesCRUDPilotos {
                         resultados.getString("forename") + " " + resultados.getString("surname"),
                         resultados.getString("formatted_dob"),
                         resultados.getString("nationality"));
-            }// Finalmente, se deben cerrar las sentencias (cuando una sentencia se cierra, su objeto ResultSet también se cierra)
-            consulta.close();
+            }
+
+
+             */
+
         } catch (SQLException e) {
             // Gestionar errores mediante excepciones
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
@@ -122,7 +130,7 @@ public class OperacionesCRUDPilotos {
         try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
 
             // Definir la consulta SQL de actualización
-            String sql = "UPDATE Pilotos SET code = ?, forename = ?, forename = ?, dob = ?, nationality = ?, url = ? WHERE driverid = ?";
+            String sql = "UPDATE drivers SET code = ?, forename = ?, forename = ?, dob = ?, nationality = ?, url = ? WHERE driverid = ?";
 
             // Preparar la sentencia SQL con los datos del piloto
             try (PreparedStatement pstmt = con.prepareStatement(sql)) {
@@ -150,14 +158,16 @@ public class OperacionesCRUDPilotos {
 
     // BorrarPiloto(), que reciba un objeto Piloto y lo elimine de la base de datos.
 
-    public static void BorrarPiloto(Path ruta, Piloto pilotoParam) {
-        try (Connection con = DriverManager.getConnection("jdbc:sqlite:" + ruta.toString())) {
+    public static void BorrarPiloto(Piloto pilotoParam) {
+        try (Connection con = DriverManager.getConnection(ruta,usuario,contrasenya)) {
 
             // Creamos una nueva sentencia de modificación, en este caso un DELETE para borrar el piloto insertado
             String borradoSQL = "DELETE FROM drivers WHERE code = ?";
             PreparedStatement borrado = con.prepareStatement(borradoSQL);
             borrado.setString(1, pilotoParam.getCode());
             borrado.executeUpdate();
+
+            System.out.println("He borrado a alguien");
 
 // Finalmente, se deben cerrar las sentencias (cuando una sentencia se cierra, su objeto ResultSet también se cierra)
             borrado.close();
