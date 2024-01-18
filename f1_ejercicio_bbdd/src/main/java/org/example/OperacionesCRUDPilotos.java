@@ -183,11 +183,16 @@ public class OperacionesCRUDPilotos {
     // ordenada por puntos de los pilotos.
 
 
+    // El mundial lo conforman todas las carreras?? Hay que ir acumulando los puntos de los
+    // pilotos y mostrarlo de forma descendente??
+
 
 
     // MostrarClasificacionConstructores(), que muestre la clasificación del mundial
     // ordenada por puntos de los equipos. Tanto en este método como en el anterior
     // tendrás que realizar consultas multitabla.
+
+
 
 }
 
