@@ -134,7 +134,7 @@ public class OperacionesCRUDNuevo {
                 pstmt.setString(4, pilotoParam.getDob());
                 pstmt.setString(5, pilotoParam.getNationality());
                 pstmt.setString(6, pilotoParam.getUrl());
-
+                pstmt.setInt(6, paramID);
 
                 // Ejecutar la actualización
                 pstmt.executeUpdate();
