@@ -21,6 +21,7 @@ public class EjemploSqlite {
                                     "WHERE nationality = ? " +
                                     "ORDER BY driverid";
             PreparedStatement consulta = conexion.prepareStatement(consultaSQL);
+
             // Metemos como primer parámetro que la nacionalidad sea Española
             consulta.setString(1, "Spanish");
 
@@ -31,6 +32,7 @@ public class EjemploSqlite {
             // Consumimos los resultados de la consulta
             System.out.format("\n%3s%5s%25s%16s%20s\n", "Id", "Cod", "Nombre", "Fecha Nac", "Nacionalidad");
             System.out.println("--------------------------------------------------------------------");
+
             // El conjunto de resultados se recorre de forma secuencial: rs.next() será verdadero si hay más datos en el set.
             while (resultados.next()) {
                 // Si cada fila del resultado está formada por varios campos, podemos obtener el valor de cada uno de ellos con rs.getString(x) o rs.getInt(x),
@@ -43,6 +45,7 @@ public class EjemploSqlite {
             }
 
             // Creamos ahora una sentencia de modificación, en este caso un INSERT
+
             // String insercionSQL = "INSERT or REPLACE INTO drivers (driverid, code, forename, surname, dob, nationality, url) VALUES (?, ?, ?, ?, ?, ?, ?)";
             String insercionSQL = "INSERT INTO drivers (code, forename, surname, dob, nationality, url) VALUES (?, ?, ?, ?, ?, ?)";
             PreparedStatement insercion = conexion.prepareStatement(insercionSQL);
@@ -54,6 +57,7 @@ public class EjemploSqlite {
             insercion.setString(6, "https://en.wikipedia.org/wiki/Carlos_Sainz_Jr.");
 
             //Ejecutamos la sentencia DML y recogemos el número de filas afectadas, si quisiéramos utilizarlo a posteriori
+
             int filasAfectadas = insercion.executeUpdate();
 
             // Comprobamos los cambios realizados en la tabla drivers

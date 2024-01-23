@@ -171,4 +171,60 @@ public class OperacionesCRUDNuevo {
             throw new RuntimeException(e);
         }
     }
+
+    public static void MostrarClasificacionPiloto(){
+
+        // Conexión a la base de datos
+        try(Connection con = DriverManager.getConnection(ruta,usuario,contrasenya)){
+            System.out.println("Conexión establecida");
+
+            // Consulta de la tabla drivers
+            //String sql = "SELECT d.code, r.points FROM drivers d JOIN results r ON d.driverid = r.driverid GROUP BY d.code ORDER BY r.points DESC";
+            String sql = "SELECT d.code, sum(r.points) AS points " +
+                    "FROM drivers d JOIN results r ON d.driverid = r.driverid \n" +
+                    "group by d.code order by sum(r.points) DEsc";
+
+            // Ejecución de la consulta
+            PreparedStatement select = con.prepareStatement(sql);
+
+            // Resultados de la consulta
+            ResultSet resultados = select.executeQuery();
+
+            // Mostrar resultados
+            while (resultados.next()){
+                System.out.println(resultados.getString("code") + " " + resultados.getInt("points"));
+            }
+        } catch (Exception SQLException) {
+            System.err.println("Error al mostrar la clasificación de pilotos");
+        }
+    }
+
+    public static void MostrarClasificacionConstructores(){
+
+        // Conexión a la base de datos
+        try(Connection con = DriverManager.getConnection(ruta,usuario,contrasenya)){
+            System.out.println("Conexión establecida");
+
+            // Consulta de la tabla drivers
+            String sql = "SELECT c.name, SUM(r.points) AS Puntos " +
+                    "FROM constructors c INNER JOIN drivers d " +
+                    "ON c.constructorid = d.constructorid " +
+                    "INNER JOIN results r ON d.driverid = r.driverid " +
+                    "GROUP BY c.constructorid ORDER BY puntos DESC";
+
+            // Ejecución de la consulta
+            PreparedStatement select = con.prepareStatement(sql);
+
+            // Resultados de la consulta
+            ResultSet resultados = select.executeQuery();
+
+            // Mostrar resultados
+            while (resultados.next()){
+                System.out.println(resultados.getString("name") + " " + resultados.getInt("Puntos"));
+            }
+        } catch (Exception SQLException) {
+            System.err.println("Error al mostrar la clasificación de constructores");
+        }
+    }
+
 }

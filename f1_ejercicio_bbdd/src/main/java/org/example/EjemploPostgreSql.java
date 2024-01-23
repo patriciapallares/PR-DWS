@@ -10,7 +10,7 @@ import java.sql.*;
         try (Connection conexion = DriverManager.getConnection(urlConexion, usuario, password)) {
             try {
                 // Por defecto, el gestor de base de datos ejecuta una operación de confirmación después de la ejecución de cada sentencia de SQL.
-                // Para desactivar la confirmación automática e iniciar así una transacción, invocamos el método Connection.setAutoCommit(false).
+                // Para desactivar la confirmación automática e iniciar así una *** transacción ***, invocamos el método Connection.setAutoCommit(false).
                 conexion.setAutoCommit(false);
 
                 // Preparamos una sentencia para crear un pedido
