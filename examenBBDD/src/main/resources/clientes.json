@@ -1,0 +1,163 @@
+[
+  {
+	"clientid": 1,
+    "dni": "66459472Y",
+    "direccion": {
+      "calle": "Sector Catalunya, 60",
+      "cp": 10887,
+      "municipio": "Tivissa",
+      "provincia": "Tarragona"
+    },
+    "dob": {
+      "$date": "1965-05-09T22:00:00Z"
+    },
+    "nombre": "Maria Dolors",
+    "apellidos": "Agudo Royo",
+	"nacionalidad": "España",
+	"telefono": "639659948",
+	"usuario" : "mariadolors_65",
+	"email" : "ocdrbd0cjo@talk21.com",
+	"contrasenya" : "iB4bB1eH"
+  },
+  {
+    "clientid": 2,
+    "dni": "39913984Z",
+    "direccion": {
+      "calle": "Avenida De España, 47",
+      "cp": 24298,
+      "municipio": "Peñalba de Santiago",
+      "provincia": "León"
+    },
+    "dob": {
+      "$date": "1995-08-17T22:00:00Z"
+    },
+    "nombre": "Adriana",
+    "apellidos": "Rico Rodriguez",
+	"nacionalidad": "España",
+	"telefono": "639659948",
+	"usuario" : "adriana_santas",
+	"email" : "8gvmd684g@talk21.com",
+	"contrasenya" : "kB2mV1eV"
+  },
+  {
+    "clientid": 3,
+    "dni": "14230374K",
+    "direccion": {
+      "calle": "Mayor, 36",
+      "cp": 31093,
+      "municipio": "Romanzado",
+      "provincia": "Navarra"
+    },
+    "dob": {
+      "$date": "1975-10-12T22:00:00Z"
+    },
+    "nombre": "Rosa",
+    "apellidos": "Pastor Prieto",
+	"nacionalidad": "España",
+	"telefono": "639659948",
+	"usuario" : "rosa_80",
+	"email" : "8gvmd684g@talk21.com",
+	"contrasenya" : "xB1hH3mB"
+  },
+  {
+    "clientid": 4,
+    "dni": "89495914Q",
+	"direccion": {
+      "calle": "Camino Horno, 22",
+      "cp": 44356,
+      "municipio": "Villahermosa Del Campo",
+      "provincia": "Teruel"
+	},
+    "dob": {
+      "$date": "1992-05-19T22:00:00Z"
+    },
+    "nombre": "Victor",
+    "apellidos": "Valdes Cuesta",
+	"nacionalidad": "España",
+	"telefono": "762089902",
+	"usuario" : "victor_92",
+	"email" : "q77b7sdlm@btinternet.com",
+	"contrasenya" : "bD3dS1kD"
+  },
+  {
+    "clientid": 5,
+    "dni": "43056944R",
+	"direccion": {
+      "calle": "Plaza Real, 42",
+      "cp": 43167,
+      "municipio": "Flix",
+      "provincia": "Tarragona"
+    },
+    "dob": {
+      "$date": "1960-01-01T22:00:00Z"
+    },
+    "nombre": "Maria Ines",
+    "apellidos": "Salcedo Rojas",
+	"nacionalidad": "España",
+	"telefono": "675627286",
+	"usuario" : "mariaines_60",
+	"email" : "9rsghpx2@caramail.com",
+	"contrasenya" : "gO2qT2bG"
+  },
+  {
+    "clientid": 6,
+    "dni": "68946655S",
+	"direccion": {
+      "calle": "Cuesta Nueva, 62",
+      "cp": 43707,
+      "municipio": "Tarragona",
+      "provincia": "Tarragona"
+    },
+    "dob": {
+      "$date": "1959-12-27T22:00:00Z"
+    },
+    "nombre": "Jose Maria",
+    "apellidos": "Arevalo Ballesteros",
+	"nacionalidad": "España",
+	"telefono": "772680582",
+	"usuario" : "josemaria_59",
+	"email" : "hv0xwnewo@techie.com",
+	"contrasenya" : "sE2tF1hB"
+  },
+  {
+    "clientid": 7,
+    "dni": "91565237Y",
+	"direccion": {
+      "calle": "Placeta De España, 19",
+      "cp": 09119,
+      "municipio": "Rucandio",
+      "provincia": "Burgos"
+    },
+    "dob": {
+      "$date": "1951-08-20T22:00:00Z"
+    },
+    "nombre": "Maria Rocio",
+    "apellidos": "Morales Martos",
+	"nacionalidad": "España",
+	"telefono": "777830584",
+	"usuario" : "mariarocio_51",
+	"email" : "wr5bz27hcy@teacher.com",
+	"contrasenya" : "dD3dC2eS"
+  },
+  {
+    "clientid": 8,
+    "dni": "57615859P",
+	"direccion": {
+      "calle": "Calle Pedralbes, 73",
+      "cp": 22525,
+      "municipio": "Loarre",
+      "provincia": "Huesca"
+    },
+    "dob": {
+      "$date": "1973-05-16T22:00:00Z"
+    },
+    "nombre": "Juan Maria",
+    "apellidos": "Ortiz Varela",
+	"nacionalidad": "España",
+	"telefono": "774165896",
+	"usuario" : "juanmaria_73",
+	"email" : "a5pl9jx85@journalism.com",
+	"contrasenya" : "fC8eH1kQ"
+  }
+ ]
+  
