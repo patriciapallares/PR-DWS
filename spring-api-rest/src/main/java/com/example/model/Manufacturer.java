@@ -9,8 +9,6 @@ public class Manufacturer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
-    // MIN 09:50
     private String name;
     @Column(name = "num_employees")
     private Integer numEmployees;
