@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface ManufacturerRepository extends JpaRepository<Manufacturer, Long> {
-    List<Manufacturer> findAllByYear(Integer year);
+//    List<Manufacturer> findAllByYear(Integer year);
 }
