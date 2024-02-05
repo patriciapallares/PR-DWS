@@ -60,6 +60,10 @@ public class ManufacturerController {
 
     @PostMapping("/manufacturers")
     public ResponseEntity<Manufacturer> create(@RequestBody Manufacturer manufacturer){
+        // comprobaciones (no funciona, paso)
+
+      //  if(manufacturer.getId() != null)
+      //      return ResponseEntity.badRequest().build();
         this.service.save(manufacturer);
         return ResponseEntity.ok(manufacturer);
     }

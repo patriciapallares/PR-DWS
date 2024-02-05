@@ -15,6 +15,7 @@ public class Manufacturer {
     @Column(name = "num_employees")
     private Integer numEmployees;
 
+    @Column(name = "init_year")
     private Integer year;
 
     public Manufacturer(long id, String name, Integer numEmployees, Integer year) {
