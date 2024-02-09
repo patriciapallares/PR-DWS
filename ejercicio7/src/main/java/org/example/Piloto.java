@@ -1,21 +1,29 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import java.time.LocalDate;
-import java.sql.Date;
+import java.util.Date;
 
-@Data
-@NoArgsConstructor
+@Getter
+@Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class Piloto {
-    private String code;
-    private String forename;
-    private String surname;
-    private Date dob;
-    private String nationality;
-    private int constructorid;
+    String code;
+    int driverid;
+    String forename;
+    String surname;
+    Date dob;
+    String nationality;
+    int constructorid;
+    String url;
 
+    public Piloto(String code, String forename, String surname, Date dob, String nationality, int constructorid) {
+        this.code = code;
+        this.forename = forename;
+        this.surname = surname;
+        this.dob = dob;
+        this.nationality = nationality;
+        this.constructorid = constructorid;
+    }
 }
