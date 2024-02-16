@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
+            color: #404040;
+            background-color: #d3d3d3;
+        }
+        body {
+            padding: 5em;
+        }
+    </style>
+    <title th:text="${titulo}"></title>
+</head>
+<body>
+<span th:text="${usuario.nombre}"></span>
+<span th:text="${usuario.apellido}"></span>
+<br>
+<span th:if="${usuario.email}" th:text="${usuario.email}"></span>
+
+<!--pendiente-->
+
+</body>
+</html>
