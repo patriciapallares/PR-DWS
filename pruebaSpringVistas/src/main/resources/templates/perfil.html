@@ -20,7 +20,7 @@
 <span th:text="${usuario.apellido}"></span>
 <br>
 <span th:if="${usuario.email}" th:text="${usuario.email}"></span>
-
+<span th:if="${usuario.email == null}">El usuario no tiene email.</span>
 <!--pendiente-->
 
 </body>
