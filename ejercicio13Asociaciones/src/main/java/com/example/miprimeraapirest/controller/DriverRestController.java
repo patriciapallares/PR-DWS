@@ -47,7 +47,7 @@ public class DriverRestController {
 
     @PostMapping("/drivers")
     public ResponseEntity<Driver> create(@RequestBody Driver driver){
-        if (driver.getDriverId() != null){
+        if (driver.getDriverid() != null){
             return ResponseEntity.badRequest().build();
         }
         this.driverService.saveDriver(driver);
