@@ -35,7 +35,7 @@ public class App {
                 EmployeeType.JUNIOR, address, null, null);
 
         // hay que hacer save en el lado owner
-        employeeRepository.save(employee);
+      //  employeeRepository.save(employee);
 
         // pendiente: se comprueban los cambios en pg-admin o k?
     }

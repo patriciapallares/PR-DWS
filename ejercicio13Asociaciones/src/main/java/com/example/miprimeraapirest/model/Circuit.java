@@ -1,5 +1,6 @@
 package com.example.miprimeraapirest.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,5 +27,9 @@ public class Circuit {
     private Double lng;
     private Integer alt;
     private String url;
+
+    @OneToOne(mappedBy = "circuit")
+    @JsonIgnoreProperties("circuit")
+    private Race race;
 
 }

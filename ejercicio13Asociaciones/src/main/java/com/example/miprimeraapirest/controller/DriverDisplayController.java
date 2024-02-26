@@ -1,3 +1,4 @@
+/*
 package com.example.miprimeraapirest.controller;
 
 import org.springframework.stereotype.Controller;
@@ -23,10 +24,7 @@ public class DriverDisplayController {
         model.addAttribute("hora", LocalDateTime.now());
         model.addAttribute("titulo","Programa de prueba");
 
-        /*
-        Se puede hacer también con Map de Java (diapo 8/20)
-        * /
-         */
+
         return "index";
     }
 
@@ -36,7 +34,12 @@ public class DriverDisplayController {
         return "listar";
     }
 
-    // ESTO CON DRIVERS
+
+
+
+}
+*/
+// ESTO CON DRIVERS
     /*
     @ModelAttribute("usuarios")
     public List<Usuario> poblarUsuarios(){
@@ -47,5 +50,3 @@ public class DriverDisplayController {
         return usuarios;
     }
     */
-
-}

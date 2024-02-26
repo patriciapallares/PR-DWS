@@ -30,6 +30,7 @@ public class Driver {
     private String forename;
     private String surname;
     @JsonProperty("dateOfBirth")
+    @Temporal(TemporalType.DATE)
     private LocalDate dob;
     private String nationality;
 
@@ -40,6 +41,7 @@ public class Driver {
     @ManyToOne
     @JoinColumn(name = "constructorid", foreignKey = @ForeignKey(name = "fk_driver_constructor"))
     private Constructor constructor;
+
     // private Integer constructorid;
     private String url;
 
