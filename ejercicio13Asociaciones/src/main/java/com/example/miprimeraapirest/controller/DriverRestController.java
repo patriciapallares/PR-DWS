@@ -13,7 +13,7 @@ import java.util.List;
  * */
 @RestController
 @RequestMapping("/api")
-public class DriverRestController {
+public class DriverANAController {
     private final DriverService driverService;
 
 

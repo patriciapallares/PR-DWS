@@ -1,5 +1,6 @@
 package com.example.miprimeraapirest.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
@@ -30,7 +31,6 @@ public class Driver {
     private String forename;
     private String surname;
     @JsonProperty("dateOfBirth")
-    @Temporal(TemporalType.DATE)
     private LocalDate dob;
     private String nationality;
 
@@ -40,6 +40,7 @@ public class Driver {
     // manyToOne
     @ManyToOne
     @JoinColumn(name = "constructorid", foreignKey = @ForeignKey(name = "fk_driver_constructor"))
+    @JsonIgnoreProperties("drivers")
     private Constructor constructor;
 
     // private Integer constructorid;

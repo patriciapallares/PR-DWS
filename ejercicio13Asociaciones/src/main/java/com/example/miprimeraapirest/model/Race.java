@@ -28,7 +28,7 @@ public class Race {
     // tipo de relación
     // un empleado tiene una dirección
     // one-to-one
-    @OneToOne(cascade = {})
+    @OneToOne
     @JoinColumn(name = "circuitid", foreignKey = @ForeignKey(name = "fk_race_circuit"))
     private Circuit circuit;
 
@@ -36,9 +36,9 @@ public class Race {
 
     private String name;
 
-    @Temporal(TemporalType.DATE)
+
     private LocalDate date;
-    @Temporal(TemporalType.TIME)
+
     private LocalDateTime time;
     private String url;
 }

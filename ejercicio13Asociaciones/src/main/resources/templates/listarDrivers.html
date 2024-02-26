@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="${titulo}"></title>
+</head>
+<body>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Code</th>
+    <th scope="col">Forename</th>
+    <th scope="col">Surname</th>
+    <th scope="col">dob</th>
+    <th scope="col">Nationality</th>
+    <!--<th scope="col">ConstructorId</th>-->
+    <th scope="col">Url</th>
+  </tr>
+  </thead>
+
+
+  <tbody>
+  <tr th:each="driver : ${drivers}">
+    <th scope="row" th:text="${driver.getId()}"></th>
+    <td th:text="${driver.getCode()}"></td>
+    <td th:text="${driver.getForename()}"></td>
+    <td th:text="${driver.getSurname()}"></td>
+    <td th:text="${driver.getDob()}"></td>
+    <td th:text="${driver.getNationality()}"></td>
+    <!--<td th:text="${driver.getConstructor().getId()}"></td>-->
+    <td th:text="${driver.getUrl()}"></td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
